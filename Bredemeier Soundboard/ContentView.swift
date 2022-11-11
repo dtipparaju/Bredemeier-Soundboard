@@ -18,17 +18,46 @@ struct ContentView: View {
                 .padding()
             Text("\(count)")
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
-                
-                ForEach(0..<10) { index in
-                    ZStack{
-                        Image("Bredemier")
-                            .resizable()
-                            .frame(width: 100, height: 100)
-                            .onTapGesture { //for now it will add numbers but later make it play audio when pressed
-                                count += 1
-                            }
+                    soundboardButton(imageName: "Bredemeier", text: "oh dear sweet barbra")
+                    .onTapGesture {
+                        count += 1
                     }
-                }
+                    soundboardButton(imageName: "Bredemeier", text: "talk to the duck")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "amogus")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "that's sus")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "Slay!")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "Period")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "*boom sound effect*")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "Boom goes the dynamite")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "My name is Saul Goodman")
+                    .onTapGesture {
+                        count += 1
+                    }
+                    soundboardButton(imageName: "Bredemeier", text: "Did you know you have rights")
+                    .onTapGesture {
+                        count += 1
+                    }
             }
         }
         .preferredColorScheme(.dark)
@@ -38,5 +67,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct soundboardButton: View {
+    let imageName: String
+    let text: String
+    var body: some View {
+        VStack {
+            Image("\(imageName)")
+                .resizable()
+                .frame(width: 75, height: 75)
+            Text(text)
+        }
     }
 }
