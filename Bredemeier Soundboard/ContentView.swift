@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+            VStack {
+                //add image of mr. b for the app icon(preferably funny)
+                Text("Bredemeier Soundboard")
+                    .font(.system(size: 60))
+                    .padding()
+                LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                    Text("x")
+                }
+            }
+        
+        .preferredColorScheme(.dark)
     }
 }
 
