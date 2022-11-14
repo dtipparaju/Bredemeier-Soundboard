@@ -24,7 +24,7 @@ class SoundManager {
         case ah
     }
     func playSound(sound: SoundOption) {
-        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".MOV") else { return }
+        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
     
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -37,59 +37,49 @@ class SoundManager {
 
 struct ContentView: View {
     @State private var pressed = ""
-    @State private var count = 0 //using this to test to see if the pressing of images work
     var body: some View {
         VStack {
            
             Text("Bredemeier Soundboard")
                 .font(.title)
                 .padding()
-            Text("\(count)")
+
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
                 soundboardButton(imageName: "Bredemeier", text: "who's joe") // never gonna give you up never gonna let you down
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .whos_joe)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "talk to the duck")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .talk_to_the_duck)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "yes.")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .yes)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "no.")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .no)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "Slay!")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .slay)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "Period.")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .period)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "sheeeeeeesh")
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .sheesh)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "dynamite") // "say boom goes the dynamite"
                     .onTapGesture {
-                        count += 1
                         SoundManager.instance.playSound(sound: .dynamite)
                     }
             }
             soundboardButton(imageName: "Bredemeier", text: "AAAAHHHHHHHHHHHHHHHHHHHH")
                 .onTapGesture {
-                    count += 1
                     SoundManager.instance.playSound(sound: .ah)
                 }
         }
