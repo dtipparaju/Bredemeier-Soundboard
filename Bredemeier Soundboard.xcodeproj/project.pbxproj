@@ -71,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F91FB1CF29228BF60034C5B4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		F9B50F51291E9FF6003FD7C3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +104,7 @@
 				F9B50F5D291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift */,
 				F9B50F5F291E9FF6003FD7C3 /* ContentView.swift */,
 				F9B50F61291E9FF8003FD7C3 /* Assets.xcassets */,
+				F91FB1CF29228BF60034C5B4 /* Sounds */,
 				F9B50F63291E9FF8003FD7C3 /* Preview Content */,
 			);
 			path = "Bredemeier Soundboard";
