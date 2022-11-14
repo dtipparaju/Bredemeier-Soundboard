@@ -24,7 +24,7 @@ class SoundManager {
         case ah
     }
     func playSound(sound: SoundOption) {
-        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
+        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".MOV") else { return }
     
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -40,7 +40,7 @@ struct ContentView: View {
     @State private var count = 0 //using this to test to see if the pressing of images work
     var body: some View {
         VStack {
-            //add image of mr. b for the app icon(preferably funny) using pig image for sake of seeing if my stuff works right now
+           
             Text("Bredemeier Soundboard")
                 .font(.title)
                 .padding()
