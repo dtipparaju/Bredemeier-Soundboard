@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F91FB20F29229D360034C5B4 /* yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20629229D360034C5B4 /* yes.mp3 */; };
-		F91FB21029229D360034C5B4 /* period.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20729229D360034C5B4 /* period.mp3 */; };
-		F91FB21129229D360034C5B4 /* slay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20829229D360034C5B4 /* slay.mp3 */; };
-		F91FB21229229D360034C5B4 /* ah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20929229D360034C5B4 /* ah.mp3 */; };
-		F91FB21329229D360034C5B4 /* talk_to_the_duck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20A29229D360034C5B4 /* talk_to_the_duck.mp3 */; };
-		F91FB21429229D360034C5B4 /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20B29229D360034C5B4 /* no.mp3 */; };
-		F91FB21529229D360034C5B4 /* dynamite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20C29229D360034C5B4 /* dynamite.mp3 */; };
-		F91FB21629229D360034C5B4 /* sheesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20D29229D360034C5B4 /* sheesh.mp3 */; };
-		F91FB21729229D360034C5B4 /* whos_joe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91FB20E29229D360034C5B4 /* whos_joe.mp3 */; };
 		F9B50F5E291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F5D291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift */; };
 		F9B50F60291E9FF6003FD7C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F5F291E9FF6003FD7C3 /* ContentView.swift */; };
 		F9B50F62291E9FF8003FD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B50F61291E9FF8003FD7C3 /* Assets.xcassets */; };
@@ -23,6 +14,15 @@
 		F9B50F6F291E9FF8003FD7C3 /* Bredemeier_SoundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F6E291E9FF8003FD7C3 /* Bredemeier_SoundboardTests.swift */; };
 		F9B50F79291E9FF8003FD7C3 /* Bredemeier_SoundboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F78291E9FF8003FD7C3 /* Bredemeier_SoundboardUITests.swift */; };
 		F9B50F7B291E9FF8003FD7C3 /* Bredemeier_SoundboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F7A291E9FF8003FD7C3 /* Bredemeier_SoundboardUITestsLaunchTests.swift */; };
+		F9F0F6F229230E34001D17EC /* sheesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6E929230E33001D17EC /* sheesh.mp3 */; };
+		F9F0F6F329230E34001D17EC /* whos_joe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6EA29230E33001D17EC /* whos_joe.mp3 */; };
+		F9F0F6F429230E34001D17EC /* ah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6EB29230E33001D17EC /* ah.mp3 */; };
+		F9F0F6F529230E34001D17EC /* talk_to_the_duck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6EC29230E33001D17EC /* talk_to_the_duck.mp3 */; };
+		F9F0F6F629230E34001D17EC /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6ED29230E33001D17EC /* no.mp3 */; };
+		F9F0F6F729230E34001D17EC /* slay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6EE29230E33001D17EC /* slay.mp3 */; };
+		F9F0F6F829230E34001D17EC /* period.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6EF29230E33001D17EC /* period.mp3 */; };
+		F9F0F6F929230E34001D17EC /* yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6F029230E34001D17EC /* yes.mp3 */; };
+		F9F0F6FA29230E34001D17EC /* dynamite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6F129230E34001D17EC /* dynamite.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F91FB20629229D360034C5B4 /* yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yes.mp3; sourceTree = "<group>"; };
-		F91FB20729229D360034C5B4 /* period.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = period.mp3; sourceTree = "<group>"; };
-		F91FB20829229D360034C5B4 /* slay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slay.mp3; sourceTree = "<group>"; };
-		F91FB20929229D360034C5B4 /* ah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ah.mp3; sourceTree = "<group>"; };
-		F91FB20A29229D360034C5B4 /* talk_to_the_duck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = talk_to_the_duck.mp3; sourceTree = "<group>"; };
-		F91FB20B29229D360034C5B4 /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = no.mp3; sourceTree = "<group>"; };
-		F91FB20C29229D360034C5B4 /* dynamite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dynamite.mp3; sourceTree = "<group>"; };
-		F91FB20D29229D360034C5B4 /* sheesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheesh.mp3; sourceTree = "<group>"; };
-		F91FB20E29229D360034C5B4 /* whos_joe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whos_joe.mp3; sourceTree = "<group>"; };
 		F9B50F5A291E9FF6003FD7C3 /* Bredemeier Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bredemeier Soundboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B50F5D291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bredemeier_SoundboardApp.swift; sourceTree = "<group>"; };
 		F9B50F5F291E9FF6003FD7C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +53,15 @@
 		F9B50F74291E9FF8003FD7C3 /* Bredemeier SoundboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bredemeier SoundboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B50F78291E9FF8003FD7C3 /* Bredemeier_SoundboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bredemeier_SoundboardUITests.swift; sourceTree = "<group>"; };
 		F9B50F7A291E9FF8003FD7C3 /* Bredemeier_SoundboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bredemeier_SoundboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9F0F6E929230E33001D17EC /* sheesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheesh.mp3; sourceTree = "<group>"; };
+		F9F0F6EA29230E33001D17EC /* whos_joe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whos_joe.mp3; sourceTree = "<group>"; };
+		F9F0F6EB29230E33001D17EC /* ah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ah.mp3; sourceTree = "<group>"; };
+		F9F0F6EC29230E33001D17EC /* talk_to_the_duck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = talk_to_the_duck.mp3; sourceTree = "<group>"; };
+		F9F0F6ED29230E33001D17EC /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = no.mp3; sourceTree = "<group>"; };
+		F9F0F6EE29230E33001D17EC /* slay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slay.mp3; sourceTree = "<group>"; };
+		F9F0F6EF29230E33001D17EC /* period.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = period.mp3; sourceTree = "<group>"; };
+		F9F0F6F029230E34001D17EC /* yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yes.mp3; sourceTree = "<group>"; };
+		F9F0F6F129230E34001D17EC /* dynamite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dynamite.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +92,15 @@
 		F91FB1CF29228BF60034C5B4 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				F91FB20929229D360034C5B4 /* ah.mp3 */,
-				F91FB20C29229D360034C5B4 /* dynamite.mp3 */,
-				F91FB20B29229D360034C5B4 /* no.mp3 */,
-				F91FB20729229D360034C5B4 /* period.mp3 */,
-				F91FB20D29229D360034C5B4 /* sheesh.mp3 */,
-				F91FB20829229D360034C5B4 /* slay.mp3 */,
-				F91FB20A29229D360034C5B4 /* talk_to_the_duck.mp3 */,
-				F91FB20E29229D360034C5B4 /* whos_joe.mp3 */,
-				F91FB20629229D360034C5B4 /* yes.mp3 */,
+				F9F0F6EB29230E33001D17EC /* ah.mp3 */,
+				F9F0F6F129230E34001D17EC /* dynamite.mp3 */,
+				F9F0F6ED29230E33001D17EC /* no.mp3 */,
+				F9F0F6EF29230E33001D17EC /* period.mp3 */,
+				F9F0F6E929230E33001D17EC /* sheesh.mp3 */,
+				F9F0F6EE29230E33001D17EC /* slay.mp3 */,
+				F9F0F6EC29230E33001D17EC /* talk_to_the_duck.mp3 */,
+				F9F0F6EA29230E33001D17EC /* whos_joe.mp3 */,
+				F9F0F6F029230E34001D17EC /* yes.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -266,17 +266,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91FB21629229D360034C5B4 /* sheesh.mp3 in Resources */,
-				F91FB21529229D360034C5B4 /* dynamite.mp3 in Resources */,
-				F91FB20F29229D360034C5B4 /* yes.mp3 in Resources */,
-				F91FB21429229D360034C5B4 /* no.mp3 in Resources */,
-				F91FB21129229D360034C5B4 /* slay.mp3 in Resources */,
+				F9F0F6F929230E34001D17EC /* yes.mp3 in Resources */,
+				F9F0F6F629230E34001D17EC /* no.mp3 in Resources */,
+				F9F0F6F829230E34001D17EC /* period.mp3 in Resources */,
+				F9F0F6F529230E34001D17EC /* talk_to_the_duck.mp3 in Resources */,
+				F9F0F6F429230E34001D17EC /* ah.mp3 in Resources */,
+				F9F0F6FA29230E34001D17EC /* dynamite.mp3 in Resources */,
+				F9F0F6F329230E34001D17EC /* whos_joe.mp3 in Resources */,
+				F9F0F6F229230E34001D17EC /* sheesh.mp3 in Resources */,
 				F9B50F65291E9FF8003FD7C3 /* Preview Assets.xcassets in Resources */,
-				F91FB21229229D360034C5B4 /* ah.mp3 in Resources */,
-				F91FB21329229D360034C5B4 /* talk_to_the_duck.mp3 in Resources */,
 				F9B50F62291E9FF8003FD7C3 /* Assets.xcassets in Resources */,
-				F91FB21029229D360034C5B4 /* period.mp3 in Resources */,
-				F91FB21729229D360034C5B4 /* whos_joe.mp3 in Resources */,
+				F9F0F6F729230E34001D17EC /* slay.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
