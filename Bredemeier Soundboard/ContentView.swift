@@ -45,7 +45,7 @@ struct ContentView: View {
                 .padding()
 
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
-                soundboardButton(imageName: "Bredemeier", text: "who's joe") // never gonna give you up never gonna let you down
+                soundboardButton(imageName: "Bredemeier", text: "rick roll") // never gonna give you up never gonna let you down
                     .onTapGesture {
                         SoundManager.instance.playSound(sound: .whos_joe)
                     }
