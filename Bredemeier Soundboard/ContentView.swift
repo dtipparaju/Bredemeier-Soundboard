@@ -7,104 +7,27 @@
 
 
 import SwiftUI
-import AVKit // for the programing stuff related to audio i used this tutorial https://www.youtube.com/watch?v=iBLZ1C4L5Mw
-
-class SoundManager {
-    static let instance = SoundManager()
-    var player: AVAudioPlayer?
-    enum SoundOption: String {
-        case whos_joe
-        case talk_to_the_duck
-        case yes
-        case no
-        case slay
-        case period
-        case sheesh
-        case dynamite
-        case ah
-    }
-    func playSound(sound: SoundOption) {
-        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player?.play()
-        } catch let error {
-            print("Error playing sound. \(error.localizedDescription)")
-        }
-    }
-}
 
 struct ContentView: View {
     @State private var name = ""
     var body: some View {
         NavigationView{
-            VStack {
-                Text("Hello \(name) welcome to the")
-                Text("Bredemeier Soundboard")
-                    .font(.title)
+            VStack{
+                Text("Welcome to the magical soundboard!")
+                    .font(.title).bold()
                     .padding()
-                
-                LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
-                    soundboardButton(imageName: "Bredemeier", text: "rick roll") // never gonna give you up never gonna let you down
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .whos_joe)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "talk to the duck")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .talk_to_the_duck)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "yes.")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .yes)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "no.")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .no)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "Slay!")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .slay)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "Period.")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .period)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "sheeeeeeesh")
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .sheesh)
-                        }
-                    soundboardButton(imageName: "Bredemeier", text: "dynamite") // "say boom goes the dynamite"
-                        .onTapGesture {
-                            SoundManager.instance.playSound(sound: .dynamite)
-                        }
-                }
-                soundboardButton(imageName: "Bredemeier", text: "AAAAHHHHHHHHHHHHHHHHHHHH")
-                    .onTapGesture {
-                        SoundManager.instance.playSound(sound: .ah)
-                    }
+                Text("What is your name?")
+                TextField("Enter name here", text: $name)
+                    
             }
-            .preferredColorScheme(.dark)
         }
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-struct soundboardButton: View {
-    let imageName: String
-    let text: String
-    var body: some View {
-        VStack {
-            Image("\(imageName)")
-                .resizable()
-                .frame(width: 80, height: 80)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-            Text(text)
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
         }
     }
-}
+    
+ 
