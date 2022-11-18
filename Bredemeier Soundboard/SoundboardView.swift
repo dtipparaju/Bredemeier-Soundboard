@@ -37,7 +37,6 @@ class SoundManager {
 struct Soundboard: View {
     var body: some View{
         VStack {
-            //Text("Hello \(name)")
             Text("Bredemeier Soundboard")
                 .font(.title)
                 .padding()
