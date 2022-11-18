@@ -20,7 +20,10 @@ struct ContentView: View {
                 Text("What is your name?")
                 TextField("Enter name here", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .font(.title).bold()
                     .padding()
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
                     .onSubmit {
                         soundboardViewButton = true
                     }
@@ -31,12 +34,15 @@ struct ContentView: View {
                     .padding()
                 Spacer()
                 if soundboardViewButton == true {
-                    NavigationLink("Lets me see the soundboard!", destination: Soundboard())
-                        .opacity(1.0)
-                        .font(.title).bold()
+                    if name != "" {
+                        NavigationLink("Lets me see the soundboard!", destination: Soundboard())
+                            .opacity(1.0)
+                            .font(.title).bold()
+                    }
+                        
                 }
             }
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
         }
     }
 }
