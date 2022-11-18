@@ -10,16 +10,33 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var name = ""
+    @State private var soundboardViewButton = false
     var body: some View {
         NavigationView{
             VStack{
-                Text("Welcome to the magical soundboard!")
-                    .font(.title).bold()
+                Text("Welcome to the soundboard!")
+                    .font(.title2).bold()
                     .padding()
                 Text("What is your name?")
                 TextField("Enter name here", text: $name)
-                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .onSubmit {
+                        soundboardViewButton = true
+                    }
+                Image("Bredemeier")
+                    .resizable()
+                    .frame(width: 350, height: 350)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding()
+                Spacer()
+                if soundboardViewButton == true {
+                    NavigationLink("Lets me see the soundboard!", destination: Soundboard())
+                        .opacity(1.0)
+                        .font(.title).bold()
+                }
             }
+            .preferredColorScheme(.light)
         }
     }
 }
