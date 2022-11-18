@@ -5,6 +5,7 @@
 //  Created by Dhanush Tipparaju on 11/11/22.
 //
 
+// Hi - Daksh
 
 import SwiftUI
 
@@ -34,7 +35,7 @@ struct ContentView: View {
                     .padding()
                 Spacer()
                 if soundboardViewButton == true {
-                    if name != "" {
+                    if name !=  "" {
                         NavigationLink("Lets me see the soundboard!", destination: Soundboard())
                             .opacity(1.0)
                             .font(.title).bold()
