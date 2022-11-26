@@ -57,7 +57,7 @@ struct ContentView: View {
                     .padding()
 
                 if soundboardViewButton && okAge == true {
-                            NavigationLink("Lets me see the soundboard!", destination: Soundboard())
+                            NavigationLink("Let me see the soundboard!", destination: Soundboard())
                                 .font(.title).bold()
                 }
                 if soundboardViewButton == true {
