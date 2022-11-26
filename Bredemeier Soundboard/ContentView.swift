@@ -16,10 +16,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text("Welcome to the soundboard!")
-                    .font(.title2).bold()
+                Text("Welcome!")
+                    .font(Font.custom("Copperplate", size: 50)).bold()
                     .padding()
-                Text("What is your name and age?")
+                Text("What's your name and age?")
+                    .font(Font.custom("Copperplate", size: 25))
                 TextField("Enter name here", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .font(.title).bold()
