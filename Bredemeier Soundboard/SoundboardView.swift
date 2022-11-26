@@ -12,7 +12,7 @@ class SoundManager {
     static let instance = SoundManager()
     var player: AVAudioPlayer?
     enum SoundOption: String {
-        case whos_joe
+        case rick_roll
         case talk_to_the_duck
         case yes
         case no
@@ -44,7 +44,7 @@ struct Soundboard: View {
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 2), spacing: 15) {
                 soundboardButton(imageName: "Bredemeier", text: "rick roll") // never gonna give you up never gonna let you down
                     .onTapGesture {
-                        SoundManager.instance.playSound(sound: .whos_joe)
+                        SoundManager.instance.playSound(sound: .rick_roll)
                     }
                 soundboardButton(imageName: "Bredemeier", text: "talk to the duck")
                     .onTapGesture {
