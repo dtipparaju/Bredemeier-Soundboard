@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9A9ACB5293510E70088AF16 /* rick_roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9A9ACB4293510E70088AF16 /* rick_roll.mp3 */; };
+		F9A9ACB6293510E70088AF16 /* rick_roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9A9ACB4293510E70088AF16 /* rick_roll.mp3 */; };
+		F9A9ACB7293510E70088AF16 /* rick_roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9A9ACB4293510E70088AF16 /* rick_roll.mp3 */; };
 		F9B50F5E291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F5D291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift */; };
 		F9B50F60291E9FF6003FD7C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50F5F291E9FF6003FD7C3 /* ContentView.swift */; };
 		F9B50F62291E9FF8003FD7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B50F61291E9FF8003FD7C3 /* Assets.xcassets */; };
@@ -23,7 +26,6 @@
 		F9F0F6F929230E34001D17EC /* yes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6F029230E34001D17EC /* yes.mp3 */; };
 		F9F0F6FA29230E34001D17EC /* dynamite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6F129230E34001D17EC /* dynamite.mp3 */; };
 		F9F0F6FE292692F4001D17EC /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F0F6FD292692F4001D17EC /* SoundboardView.swift */; };
-		F9F0F70029329DD5001D17EC /* rick_roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9F0F6FF29329DD5001D17EC /* rick_roll.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F9A9ACB4293510E70088AF16 /* rick_roll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rick_roll.mp3; sourceTree = "<group>"; };
 		F9B50F5A291E9FF6003FD7C3 /* Bredemeier Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bredemeier Soundboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B50F5D291E9FF6003FD7C3 /* Bredemeier_SoundboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bredemeier_SoundboardApp.swift; sourceTree = "<group>"; };
 		F9B50F5F291E9FF6003FD7C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		F9F0F6F029230E34001D17EC /* yes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yes.mp3; sourceTree = "<group>"; };
 		F9F0F6F129230E34001D17EC /* dynamite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dynamite.mp3; sourceTree = "<group>"; };
 		F9F0F6FD292692F4001D17EC /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
-		F9F0F6FF29329DD5001D17EC /* rick_roll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rick_roll.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,8 @@
 				F9F0F6EF29230E33001D17EC /* period.mp3 */,
 				F9F0F6E929230E33001D17EC /* sheesh.mp3 */,
 				F9F0F6EE29230E33001D17EC /* slay.mp3 */,
+				F9A9ACB4293510E70088AF16 /* rick_roll.mp3 */,
 				F9F0F6EC29230E33001D17EC /* talk_to_the_duck.mp3 */,
-				F9F0F6FF29329DD5001D17EC /* rick_roll.mp3 */,
 				F9F0F6F029230E34001D17EC /* yes.mp3 */,
 			);
 			path = Sounds;
@@ -269,13 +271,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F0F70029329DD5001D17EC /* rick_roll.mp3 in Resources */,
 				F9F0F6F929230E34001D17EC /* yes.mp3 in Resources */,
 				F9F0F6F629230E34001D17EC /* no.mp3 in Resources */,
 				F9F0F6F829230E34001D17EC /* period.mp3 in Resources */,
 				F9F0F6F529230E34001D17EC /* talk_to_the_duck.mp3 in Resources */,
 				F9F0F6F429230E34001D17EC /* ah.mp3 in Resources */,
 				F9F0F6FA29230E34001D17EC /* dynamite.mp3 in Resources */,
+				F9A9ACB5293510E70088AF16 /* rick_roll.mp3 in Resources */,
 				F9F0F6F229230E34001D17EC /* sheesh.mp3 in Resources */,
 				F9B50F65291E9FF8003FD7C3 /* Preview Assets.xcassets in Resources */,
 				F9B50F62291E9FF8003FD7C3 /* Assets.xcassets in Resources */,
@@ -287,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A9ACB6293510E70088AF16 /* rick_roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A9ACB7293510E70088AF16 /* rick_roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
